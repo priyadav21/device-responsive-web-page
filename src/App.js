@@ -6,13 +6,13 @@ import { content } from "./data";
 
 function App() {
   const [data, setData] = useState(null);
-  setData(content);
 
-  // useEffect(() => {
-  //   fetch("/data")
-  //     .then((res) => res.json())
-  //     .then((data) => setData(data));
-  // }, []);
+  useEffect(() => {
+    setData(content);
+    // fetch("/data")
+    //   .then((res) => res.json())
+    //   .then((data) => setData(data));
+  }, []);
 
   return (
     <div className="App">
