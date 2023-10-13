@@ -12,19 +12,17 @@ const TabComponent = (props) => {
   };
 
   return (
-    <div>
-      <div className="tab-container">
-        {props.tabDetails.map((tab) => {
-          return (
-            <button
-              className={`tab-button ${activeTab === tab.type && "active"}`}
-              onClick={() => handleTabClick(tab.type)}
-            >
-              {tab.name}
-            </button>
-          );
-        })}
-      </div>
+    <div className="tab-container">
+      {props.tabDetails.map((tab) => {
+        return (
+          <button
+            className={`tab-button ${activeTab === tab.type && "active"}`}
+            onClick={() => handleTabClick(tab.type)}
+          >
+            {tab.name}
+          </button>
+        );
+      })}
     </div>
   );
 };

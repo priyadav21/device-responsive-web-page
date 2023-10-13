@@ -37,6 +37,7 @@ hr {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -75,16 +76,15 @@ hr {
   margin: 10px;
   padding: 15px;
   width: 50%;
-  height: 50%;
+  /*height: 50%; */
 }
 
 .chart-holder {
-  width: 20vw;
-  height: 25vh;
+  padding: 10px;
 }
 
 .side-cards {
-  width: 100%;
+  width: 50%;
 }
 
 .side-cards-row {
@@ -129,34 +129,54 @@ hr {
   padding: 15px;
 }
 
+.property-container {
+  width: 100%;
+  padding: 20px;
+}
+
 .card-title {
   margin-bottom: 10px;
   font-weight: bold;
   font-size: 2vw;
+  @media (max-width: 767px) {
+    font-size: 6vw;
+  }
 }
 .card-subtitle {
   font-weight: normal;
   font-size: 1.5vw;
   font-weight: bold;
   margin-bottom: 5px;
+  @media (max-width: 767px) {
+    font-size: 4.5vw;
+  }
 }
 .card-text {
   font-weight: normal;
   font-size: 1vw;
   margin-bottom: 5px;
+  @media (max-width: 767px) {
+    font-size: 3vw;
+  }
 }
 .card-subtext {
   font-weight: normal;
   font-size: 1vw;
   color: grey;
   margin-bottom: 5px;
+  @media (max-width: 767px) {
+    font-size: 3vw;
+  }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 767px) {
   .row {
     flex-direction: column;
   }
   .summary {
+    width: 100%;
+  }
+  .side-cards {
     width: 100%;
   }
   .side-cards-row {

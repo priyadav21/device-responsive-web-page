@@ -18,35 +18,33 @@ const PropertyCard = (props) => {
     };
   }
   return (
-    <div>
-      <div className="property-container">
-        {data ? (
-          <div className="property-card">
-            <div className="row card-title">{obj.name}</div>
-            <div className="row card-subtitle">
-              <div className="column ">{obj.currValue}</div>
-              <div className="column">{obj.percent}%</div>
-            </div>
-            <div className="row card-text">
-              {" "}
-              <p>ystd: {obj.currDate}</p>
-            </div>
-            <div className="row card-subtext">
-              prev: {obj.prevDate} : {obj.prevValue}
-            </div>
+    <div className="property-container">
+      {data ? (
+        <div className="property-card">
+          <div className="row card-title">{obj.name}</div>
+          <div className="row card-subtitle">
+            <div className="column ">{obj.currValue}</div>
+            <div className="column">{obj.percent}%</div>
           </div>
-        ) : (
-          <div className="property-card">
-            <div className="row card-title">Property Card</div>
-            <div className="row card-subtitle">
-              <div className="column">1234</div>
-              <div className="column">+30%</div>
-            </div>
-            <div className="row card-text">ystd: Oct 09</div>
-            <div className="row card-subtext">Prev: Oct 08 : 949</div>
+          <div className="row card-text">
+            {" "}
+            <p>ystd: {obj.currDate}</p>
           </div>
-        )}
-      </div>
+          <div className="row card-subtext">
+            prev: {obj.prevDate} : {obj.prevValue}
+          </div>
+        </div>
+      ) : (
+        <div className="property-card">
+          <div className="row card-title">Property Card</div>
+          <div className="row card-subtitle">
+            <div className="column">1234</div>
+            <div className="column">+30%</div>
+          </div>
+          <div className="row card-text">ystd: Oct 09</div>
+          <div className="row card-subtext">Prev: Oct 08 : 949</div>
+        </div>
+      )}
     </div>
   );
 };
