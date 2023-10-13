@@ -12,7 +12,7 @@ const BottomCards = (props) => {
   }
 
   return (
-    <div className="row">
+    <div className="bottom-row">
       <div className="bottom-cards column shadow white-background">
         <PropertyCard />
       </div>

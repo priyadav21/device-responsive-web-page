@@ -10,7 +10,7 @@ const SideCards = () => {
     { name: "ACOS", type: "acos" },
   ];
   return (
-    <div className="row">
+    <div className="side-cards-row">
       <div className=" sideCard-col shadow white-background column">
         <div className="row">
           <TabComponent tabDetails={tabDetails} setKey={setActiveTab} />

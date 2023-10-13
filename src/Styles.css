@@ -57,7 +57,7 @@ hr {
 }
 
 .second-row {
-  height: 60vh;
+  /* height: 60vh; */
   padding-top: 20px;
   width: 95%;
   margin: 5px;
@@ -84,10 +84,12 @@ hr {
 }
 
 .side-cards {
-  flex: 1;
+  width: 100%;
+}
+
+.side-cards-row {
   display: flex;
-  flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
 }
 
 .sideCard-col {
@@ -112,14 +114,19 @@ hr {
 
 .third-row {
   height: 20vh;
-  width: 95%;
+  width: 100%;
   padding-top: 40px;
   margin: 5px;
+}
+.bottom-row {
+  display: flex;
+  width: 100%;
 }
 
 .bottom-cards {
   width: 30%;
   margin: 10px;
+  padding: 15px;
 }
 
 .card-title {
@@ -145,12 +152,23 @@ hr {
   margin-bottom: 5px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 560px) {
   .row {
     flex-direction: column;
   }
-  /* .summary,
-  .side-cards {
+  .summary {
     width: 100%;
-  } */
+  }
+  .side-cards-row {
+    flex-direction: column;
+  }
+  .sideCard-col {
+    width: 100%;
+  }
+  .bottom-row {
+    flex-direction: column;
+  }
+  .bottom-cards {
+    width: 100%;
+  }
 }
