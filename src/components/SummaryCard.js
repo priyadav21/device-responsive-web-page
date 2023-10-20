@@ -37,10 +37,11 @@ const SummaryCard = (props) => {
           </div>
           <div className="row">
             <div className="column card-holder">
-              <PropertyCard data={seller} dates={dates} />
+              <PropertyCard data={seller} dates={dates} chartProperty ={1} 
+              />
             </div>
             <div className="column card-holder">
-              <PropertyCard data={vendor} dates={dates} />
+              <PropertyCard data={vendor} dates={dates} chartProperty ={2}/>
             </div>
           </div>
         </div>

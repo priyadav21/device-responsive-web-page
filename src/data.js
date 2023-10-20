@@ -17,7 +17,7 @@ export const content = {
           type: "seller",
           value: {
             type: "price",
-            amount: 289,
+            amount: 2890,
           },
         },
         vendor: {
@@ -25,7 +25,7 @@ export const content = {
           type: "vendor",
           value: {
             type: "price",
-            amount: 372775,
+            amount: 37277,
           },
         },
       },
