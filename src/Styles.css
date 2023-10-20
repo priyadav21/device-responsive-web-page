@@ -94,13 +94,7 @@ hr {
   margin-right: 15px;
 }
 
-.property1 {
-  color: #5b58e7;
-}
 
-.property2 {
-  color: #2db6f5;
-}
 
 .card-holder {
   padding: 15px;
@@ -168,14 +162,14 @@ height: 14.625rem;
 .card-title {
   margin-bottom: 10px;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 1.5rem;
   @media (max-width: 767px) {
     font-size: 6vw;
   }
 }
 .card-subtitle {
   font-weight: normal;
-  font-size: 1.5vw;
+  font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 5px;
   @media (max-width: 767px) {
@@ -184,7 +178,7 @@ height: 14.625rem;
 }
 .card-text {
   font-weight: normal;
-  font-size: 1vw;
+  font-size: 0.875rem;
   margin-bottom: 5px;
   @media (max-width: 767px) {
     font-size: 3vw;
@@ -192,12 +186,22 @@ height: 14.625rem;
 }
 .card-subtext {
   font-weight: normal;
-  font-size: 1vw;
+  font-size: 0.875rem;
   color: grey;
   margin-bottom: 5px;
   @media (max-width: 767px) {
     font-size: 3vw;
   }
+}
+
+.property1 {
+  color: #5b58e7;
+  font-size: 1rem;
+}
+
+.property2 {
+  color: #2db6f5;
+  font-size: 1rem;
 }
 
 @media (max-width: 767px) {
