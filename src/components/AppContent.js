@@ -36,8 +36,8 @@ const AppContent = (props) => {
         </div>
       ) : (
         <div>
-          <div className="view-title row">
-            <p>Total {data.name}'s Overview</p>
+          <div className="view-title">
+            <div className="username">Total {data.name}'s Overview</div>
           </div>
           <div className="row second-row">
             <div className="summary shadow white-background">

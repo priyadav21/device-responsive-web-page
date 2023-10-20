@@ -15,12 +15,12 @@ const TabComponent = (props) => {
     <div className="tab-container">
       {props.tabDetails.map((tab) => {
         return (
-          <button
+          <div
             className={`tab-button ${activeTab === tab.type && "active"}`}
             onClick={() => handleTabClick(tab.type)}
           >
             {tab.name}
-          </button>
+          </div>
         );
       })}
     </div>

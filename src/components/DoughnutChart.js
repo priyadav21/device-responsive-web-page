@@ -5,11 +5,11 @@ Chart.register(ArcElement);
 const DoughnutChart = () => {
   //   const { labels, value } = props.data;
   const data = {
-    labels: ["Red", "Blue"],
+    labels: ["Vendor", "Seller"],
     datasets: [
       {
         data: [300, 50],
-        backgroundColor: ["#FF6384", "#36A2EB"],
+        backgroundColor: ["#2db6f5", "#5b58e7"],
       },
     ],
   };
